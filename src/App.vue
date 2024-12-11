@@ -1,12 +1,12 @@
 <template>
-  <nav-bar></nav-bar>
+  <nav-bar />
   <router-view />
 </template>
 
 <script setup lang="ts">
-import Navbar
+import NavBar from "@/components/NarBar.vue";
 </script>
 
 <style>
-@import url("./assets/css/main.css");
+@import "@/assets/css/main.css";
 </style>

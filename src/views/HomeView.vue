@@ -1,7 +1,6 @@
 <template>
   <div>
     <div id="navbar-component"></div>
-
     <header>
       <!-- <div id="navbar-component"></div> -->
       <div class="navbox">
@@ -23,7 +22,9 @@
     </header>
 
     <section id="services">
-      <div class="card-container container" id="card-component"></div>
+      <div class="container" id="card-component">
+        <CardService/>
+      </div>
     </section>
 
     <section class="bg-black container" id="about">
@@ -117,7 +118,9 @@
   </div>
 </template>
 
-<script lang="ts"></script>
+<script setup lang="ts">
+import CardService from "@/components/CardService.vue"
+</script>
 
 <style scoped>
 @import "@/assets/css/form.css";
@@ -125,7 +128,7 @@
 header {
   background-image: url(../../public/img/barbershop-logo-2.jpg);
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
   min-height: 400px;
 
   /* padding-top: 20px; */
