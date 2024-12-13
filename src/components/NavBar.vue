@@ -1,12 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-  >
+      >
       <img
         class="navbar-toggler border-0"
         src="imagens/barber-fundo.jpg"
         height="40"
-        alt=""
+        alt="logo-img"
       />
       <button
         class="navbar-toggler bg-yellow"
@@ -50,25 +50,7 @@
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: var(--shadow);
-  /* display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    position: sticky;
-    top: 0 */
 }
-
-/* .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-} */
-
-/* .nav-links li {
-    margin-right: 20px;
-} */
-
 .navbar .nav-link {
   text-decoration: none;
   color: var(--white);
@@ -77,11 +59,8 @@
   transition: 0.3s ease;
   border-bottom: solid 4px transparent;
 }
-
 .navbar .nav-link:hover,
 .navbar .nav-link:active {
-  /* background-color: var(--yellow);
-    border-radius: 5px; */
   color: var(--yellow);
   border-bottom: solid 4px var(--yellow);
   transition: 0.3s ease;

@@ -1,3 +1,3 @@
-import {cardComponent} from "../../components/card-component/card-component.js"
+import { cardComponent } from "../../components/card-component/card-component.js";
 
-cardComponent()
+cardComponent();
