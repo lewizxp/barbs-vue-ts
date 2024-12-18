@@ -106,6 +106,7 @@
 import { ref } from "vue";
 import { Person } from "@/core/domain/Person";
 
+const confPass = ref("");
 const nome = ref("");
 const email = ref("");
 const person = ref(new Person());
