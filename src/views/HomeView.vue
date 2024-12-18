@@ -37,7 +37,7 @@
           <p>comentario.</p>
         </div>
         <div class="menu-itens">
-          <img src="" alt="img" />
+          <img src="/public/imagens/barber-logo.jpg" alt="img" />
           <p>comentario</p>
         </div>
       </section>

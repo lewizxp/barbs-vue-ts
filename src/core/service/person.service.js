@@ -2,7 +2,7 @@ import { setPerson } from "./../infra/person.repository.js";
 
 export const personService = {
   add,
-};
+}
 
 function add(person) {
   setPerson(person)
