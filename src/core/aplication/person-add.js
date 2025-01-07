@@ -26,8 +26,8 @@ function getFormPerson() {
 function submitForm() {
   const buttonSubmit = document.querySelector("#submitForm");
   buttonSubmit.addEventListener("click", () => {
-    const person = getFormPerson();
-    console.log(person);
-    personService.add(person);
+      const person = getFormPerson();
+      console.log(person);
+      personService.add(person);
   });
 }

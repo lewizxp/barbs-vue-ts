@@ -31,15 +31,15 @@
         <button>Entrar</button>
       </div>
       <div>
-        <p>Novo aqui? <a href="person-add.html">cadastre-se</a></p>
-        <p><a href="person-recovery.html">esqueceu a senha?</a></p>
+        <p>Novo aqui? <RouterLink to="/person-add">cadastre-se</RouterLink></p>
+        <p>
+          <router-link to="/person-recovery">esqueceu a senha?</router-link>
+        </p>
       </div>
     </form>
   </section>
 </template>
-
 <script setup lang="ts"></script>
-
 <style scoped>
 @import "@/assets/css/login.css";
 </style>

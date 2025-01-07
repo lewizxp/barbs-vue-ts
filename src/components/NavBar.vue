@@ -1,12 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      >
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <img
         class="navbar-toggler border-0"
-        src="imagens/barber-fundo.jpg"
+        src="imagem/barbershop-logo.jpg"
         height="40"
-        alt="logo-img"
+        alt=""
       />
       <button
         class="navbar-toggler bg-yellow"
@@ -22,35 +22,54 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/home">Inicio</RouterLink>
+            <RouterLink class="nav-link" to="/">Inicio</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/#services">Serviços</RouterLink>
           </li>
           <li class="nav-item">
-            <Router-Link class="nav-link" to="/#about">Sobre Nós</Router-Link>
+            <RouterLink class="nav-link" to="#about">Sobre Nós</RouterLink>
           </li>
           <li class="nav-item">
-            <Router-Link class="nav-link" to="/#contact">Contato</Router-Link>
+            <RouterLink class="nav-link" to="#contact">Contato</RouterLink>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <Router-Link class="nav-link" to="/login">Entrar</Router-Link>
+            <RouterLink class="nav-link" to="/login">Entrar</RouterLink>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
-<script lang="ts"></script>
 
-<style>
+<script setup lang="ts"></script>
+
+<style scoped>
 .navbar {
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: var(--shadow);
+  /* display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top: 0 */
 }
+
+/* .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+/* .nav-links li {
+    margin-right: 20px;
+} */
+
 .navbar .nav-link {
   text-decoration: none;
   color: var(--white);
@@ -59,8 +78,11 @@
   transition: 0.3s ease;
   border-bottom: solid 4px transparent;
 }
+
 .navbar .nav-link:hover,
 .navbar .nav-link:active {
+  /* background-color: var(--yellow);
+    border-radius: 5px; */
   color: var(--yellow);
   border-bottom: solid 4px var(--yellow);
   transition: 0.3s ease;

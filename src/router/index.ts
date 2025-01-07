@@ -5,21 +5,22 @@ import PersonAdd from "@/views/PersonAddView.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
+    name: "Início",
     component: HomeView,
   },
 
   {
     path: "/login",
-    name: "login",
+    name: "Entrar",
     component: () => import("../views/LoginView.vue"),
   },
   {
     path: "person-add",
-    name: "PersonAdd",
+    name: "Adicionar Usúario",
     component: PersonAdd,
   },
 
+  
   {
     path: "/about",
     name: "about",
