@@ -1,7 +1,6 @@
 <template>
   <div>
     <header>
-      <!-- <div id="navbar-component"></div> -->
       <div class="navbox">
         <div class="header-content container">
           <div class="header-title">
@@ -14,7 +13,7 @@
             </p>
           </div>
           <div class="logo">
-            <img src="public/imagens/barber-logo.jpg" alt="logo" />
+            <img src="imagem/barbershop-logo.jpg" alt="logo" />
           </div>
         </div>
       </div>
@@ -29,15 +28,15 @@
     <section class="bg-black container" id="about">
       <section class="menu-container">
         <div class="menu-itens">
-          <img src="/public/imagens/barber-logo.jpg" alt="img" />
+          <img src="imagem/barbershop-logo.jpg" alt="img" />
           <p>comentario.</p>
         </div>
         <div class="menu-itens">
-          <img src="/public/imagens/barber-logo.jpg" alt="img" />
+          <img src="imagem/barbershop-logo.jpg" alt="img" />
           <p>comentario.</p>
         </div>
         <div class="menu-itens">
-          <img src="/public/imagens/barber-logo.jpg" alt="img" />
+          <img src="imagem/barbershop-logo.jpg" alt="img" />
           <p>comentario</p>
         </div>
       </section>
@@ -59,7 +58,10 @@
             <p>
               <b>Rua Barbas Cortadas, 789, Campo Grande</b>
             </p>
-            <p>Tel: <span class="bold numberPhone">21 5555-55555</span></p>
+            <p>
+              Tel:
+              <span class="bold numberPhone">21 5555-55555</span>
+            </p>
           </div>
         </div>
 
@@ -92,7 +94,7 @@
                 <option disabled selected>Assunto</option>
                 <option value="contato">Contato</option>
                 <option value="reclame">Reclamação</option>
-                <option value="sugent">Sugestão</option>
+                <option value="suggestion">Sugestão</option>
               </select>
             </div>
 
@@ -118,7 +120,7 @@
 </template>
 
 <script setup lang="ts">
-import CardService from "@/components/CardService.vue";
+import CardService from "@/components/CardService.vue"
 </script>
 
 <style scoped>

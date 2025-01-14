@@ -8,10 +8,7 @@ export class Person {
   typePerson: string; // fisica | juridica
   typeAccess: string; // cliente | gestor
   password: string;
-  //address: Address
-  //company: Company
   isActive: boolean;
-
   constructor() {
     this.name = "";
     this.email = "";
