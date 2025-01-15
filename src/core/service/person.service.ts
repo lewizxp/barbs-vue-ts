@@ -6,6 +6,10 @@ export const personService = {
 };
 
 function add(person: Person) {
+    person.document = !person.document ? "" : person.document;
+    person.gender = person.gender ?? "";
+    person.photo = person.photo ?? "https://picsum.photos/100";
+
     addPerson(person)
         .then(res => {
             console.log("Adicionado: ", res);

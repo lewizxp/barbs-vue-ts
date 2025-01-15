@@ -120,7 +120,7 @@
 </template>
 
 <script setup lang="ts">
-import CardService from "@/components/CardService.vue"
+import CardService from "@/components/CardService.vue";
 </script>
 
 <style scoped>
