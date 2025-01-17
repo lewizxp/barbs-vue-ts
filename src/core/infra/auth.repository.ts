@@ -1,4 +1,3 @@
-
 //https://firebase.google.com/docs/auth/web/start?hl=pt&authuser=0#web-namespaced-api_1
 
 import { app } from "./firebase";

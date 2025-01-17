@@ -1,7 +1,7 @@
 //https://firebase.google.com/docs/firestore/manage-data/add-data?hl=pt&authuser=0
 
 import { Person } from "../domain/Person";
-import { addAuth, removeAuth } from "./auth.repositoy";
+import { addAuth, removeAuth } from "./auth.repository";
 import { app } from "./firebase";
 import {
     getFirestore,

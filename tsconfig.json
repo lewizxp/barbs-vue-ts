@@ -1,30 +1,32 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "resolveJsonModule": true,
-    "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": ["webpack-env", "jest"],
-    "paths": {
-      "@/*": ["src/*"]
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ES2020",
+        "resolveJsonModule": true,
+        "declaration": true,
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "types": ["webpack-env", "jest"],
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "lib": ["es2020", "dom", "dom.iterable", "scripthost"]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": ["node_modules"]
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        "src/**/*"
+    ],
+    "exclude": ["node_modules", "dist", "src/**/*.spec.ts"]
 }

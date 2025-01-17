@@ -1,23 +1,23 @@
 [
-  {
-    "nome": "Lavagem curta",
-    "valor": 13.0,
-    "descricao": "Lavagem para cabelos curtos",
-    "fotos": "./imagens/barber-fundo.jpg",
-    "duracao": 2
-  },
-  {
-    "nome": "Lavagem media",
-    "valor": 20.0,
-    "descricao": "Lavagem para cabelos medios",
-    "fotos": "./imagens/barber-fundo.jpg",
-    "duracao": 3.5
-  },
-  {
-    "nome": "Lavagem longa",
-    "valor": 40.0,
-    "descricao": "Lavagem para cabelos logos",
-    "fotos": "../imagens/barber-fundo.jpg",
-    "duracao": 4.5
-  }
+    {
+        "nome":"Lavagem curta",
+        "valor":13.00,
+        "descricao":"Lavagem para cabelos curtos",
+        "fotos": "./imagem/barber-5497152_1280.jpg",
+        "duracao":2
+    },
+    {
+        "nome":"Lavagem media",
+        "valor":20.00,
+        "descricao":"Lavagem para cabelos medios",
+        "fotos": "./imagem/barber-5497152_1280.jpg",
+        "duracao":3.5
+    },
+    {
+        "nome":"Lavagem longa",
+        "valor":40.00,
+        "descricao":"Lavagem para cabelos logos",
+        "fotos": "./imagem/barber-5497152_1280.jpg",
+        "duracao":4.5
+    }
 ]
