@@ -1,13 +1,14 @@
 <template>
     <section>
         <form
-            action="#"
             id="formPersonAdd"
             class="bg-yellow container p-5"
             enctype="multipart/form-data"
+            @submit.prevent="add()"
         >
             <h1 class="text-center">Faça seu cadastro</h1>
             {{ person }}
+
             <InputValue
                 v-model="person.name"
                 type="text"
@@ -41,11 +42,17 @@
                 :validation="person.password == confPass"
             ></InputValue>
 
+            <InputValue
+                v-model="person.telephone"
+                type="tel"
+                label="Telefone"
+                message="Telefone invalido"
+                :required="true"
+            ></InputValue>
+
             <div class="my-3 form-group flex-row gap-2">
                 <button type="reset">Cancelar</button>
-                <button type="button" id="submitForm" @click="add()">
-                    Enviar
-                </button>
+                <button type="submit" id="submitForm">Enviar</button>
             </div>
         </form>
     </section>
@@ -55,13 +62,11 @@
 import { ref } from "vue";
 import { Person } from "@/core/domain/Person";
 import { personService } from "@/core/service/person.service";
-import { isValue } from "@/core/helpers/validator";
 import InputValue from "@/components/InputValue.vue";
-
-const isValidate = ref(true);
 
 const confPass = ref<string>("");
 const person = ref<Person>(new Person());
+
 function add() {
     personService.add(person.value);
 }

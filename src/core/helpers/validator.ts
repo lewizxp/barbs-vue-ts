@@ -1,10 +1,11 @@
+
 export function isValue(value: string | number | undefined) {
   return !!value;
 }
 
 export function isEmail(value?: string) {
   if (!value) return false;
-  const regexEmail = /^[a-z0-9]+\\@[a-z]+\.([a-z]{3})+$/g;
+  const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
   return regexEmail.test(value);
 }
 
@@ -15,7 +16,7 @@ export function isPhone(value?: string) {
 }
 
 export function isPassword(value?: string) {
-  if (!value) return;
-  const regexPass = /\([a-zA-Z0-9#?!@$%^&*-]\){8,}/g;
+  if (!value) return false;
+  const regexPass = /([a-zA-Z0-9#?!@$%^&*-]){8,}/g;
   return regexPass.test(value);
 }

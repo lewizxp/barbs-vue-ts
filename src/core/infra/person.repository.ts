@@ -1,4 +1,7 @@
+//https://firebase.google.com/docs/firestore/manage-data/add-data?hl=pt&authuser=0
+
 import { Person } from "../domain/Person";
+import { addAuth, removeAuth } from "./auth.repositoy";
 import { app } from "./firebase";
 import {
     getFirestore,
@@ -7,12 +10,33 @@ import {
     addDoc,
     query,
     where,
+    doc,
+    setDoc,
 } from "firebase/firestore/lite";
 
 const db = getFirestore(app);
 
 export async function addPerson(person: Person) {
-    return await addDoc(collection(db, "person"), { ...person });
+    return addAuth(person.email, person.password)
+        .then(async userCredential => {
+            // Signed up
+            const user = userCredential.user;
+            //person.auth = user.uid;
+            person.password = "";
+
+            return await setDoc(doc(db, "person", user.uid), {
+                ...person,
+            });
+            // ...
+        })
+        .catch(error => {
+            removeAuth();
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            throw new Error(error);
+
+            // ..
+        });
 }
 
 export async function queryPerson() {
@@ -26,5 +50,4 @@ export async function queryPerson() {
     });
 
     return querySnapshot;
-
-  }
+}
